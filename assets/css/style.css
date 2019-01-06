@@ -1,0 +1,189 @@
+/* 大型PC */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    color: #262626;
+    background-color: #f2f2f2;
+}
+
+@font-face {
+    font-family: "Corporate B";
+    src: url('../fonts/logotypejp_mp_b_1.1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Corporate M";
+    src: url('../fonts/logotypejp_mp_m_1.1.ttf') format('truetype');
+}
+
+/* 複数回指定するもの */
+
+.wrapper {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: calc(100vh - 20px);
+}
+
+.colorBg {
+    transition: .3s background linear 0s;
+}
+
+.label {
+    z-index: 80;
+    display: inline-block;
+    position: absolute;
+    top: -1em;
+    width: 10em;
+    transition: .1s;
+}
+
+.label:hover {
+    top: -0.7em;
+}
+
+.label-l {
+    left: 0;
+}
+
+.label-r {
+    right: 0;
+}
+
+p {
+    display: inline-block;
+    font-weight: normal;
+    font-family: "Corporate M";
+}
+
+/*プログレスバー*/
+
+#progress-box {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 20px;
+    background-color: #bfbfbf;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #262626;
+    transition: .1s linear;
+}
+
+header {
+    position: relative;
+}
+
+h2 {
+    display: inline-block;
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    letter-spacing: 0.05em;
+    font-size: 7em;
+    font-weight: normal;
+    font-family: "Corporate B";
+}
+
+header p {
+    position: absolute;
+    top: 7.5%;
+    right: 5%;
+    text-align: right;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    font-size: 3.5em;
+}
+
+.roulette {
+    display: inline-block;
+    position: absolute;
+    bottom: 7.5%;
+    left: 5%;
+    width: 27em;
+    height: 27em;
+}
+
+.target {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25em;
+    transition: .3s linear;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4em;
+}
+
+.illust{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 40%;
+}
+
+#message {
+    height: 100vh;
+}
+
+#message p {
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    line-height: 1.5em;
+    letter-spacing: 0.25em;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: "Corporate M";
+}
+
+.copyright {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5%;
+    width: 90%;
+    text-align: right;
+    letter-spacing: 0.05em;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: "Corporate B";
+    color: #bfbfbf;
+    background: #f2f2f2;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+/* 小型PC */
+@media screen and (min-width:960px) and (max-width:1279px) {
+
+    body {
+        font-size: 12px;
+    }
+
+}

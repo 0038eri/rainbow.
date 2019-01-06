@@ -1,0 +1,79 @@
+.red {
+    background-color: #db2c41;
+}
+
+.red p {
+    font-family: tbudmincho-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.orange {
+    background-color: #d8772e;
+}
+
+.orange p {
+    font-family: tbudgothic-std, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.yellow {
+    background-color: #e5e533;
+}
+
+.yellow p {
+    font-family: fot-seurat-pron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.green {
+    background-color: #2ed83e;
+}
+
+.green p {
+    font-family: fot-tsukubrdgothic-std, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lightblue {
+    background-color: #24d9e2;
+}
+
+.lightblue p {
+    font-family: ten-mincho-text, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.blue {
+    background-color: #2e2ed8;
+}
+
+.blue p {
+    font-family: tbnpmincho-std, serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.purple {
+    background-color: #9e2ed8;
+}
+
+.purple p {
+    font-family: ta-hougan-k500, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pink {
+    background-color: #ea28e5;
+}
+
+.pink p {
+    font-family: vdl-megamaru, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

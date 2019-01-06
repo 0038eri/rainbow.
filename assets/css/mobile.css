@@ -1,0 +1,344 @@
+/*標準 iPad Pro*/
+/*縦向き*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 8px;
+    color: #262626;
+    background-color: #f2f2f2;
+}
+
+@font-face {
+    font-family: "Corporate B";
+    src: url('../fonts/logotypejp_mp_b_1.1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Corporate M";
+    src: url('../fonts/logotypejp_mp_m_1.1.ttf') format('truetype');
+}
+
+/* 複数回指定するもの */
+
+.wrapper {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: calc(100vh - 20px);
+}
+
+.colorBg {
+    transition: .3s background linear 0s;
+}
+
+.label {
+    z-index: 80;
+    display: inline-block;
+    position: absolute;
+    width: 40em;
+    transition: .1s;
+}
+
+.label:hover {
+    top: -0.7em;
+}
+
+.label-l {
+    left: -1em;
+}
+
+.label-r {
+    right: -1em;
+}
+
+p {
+    display: inline-block;
+    font-weight: normal;
+    font-family: "Corporate M";
+}
+
+/*プログレスバー*/
+
+#progress-box {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 20px;
+    background-color: #bfbfbf;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #262626;
+    transition: .1s linear;
+}
+
+header {
+    position: relative;
+}
+
+h2 {
+    display: inline-block;
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    width: 90%;
+    letter-spacing: 0.05em;
+    font-size: 16em;
+    font-weight: normal;
+    font-family: "Corporate B";
+}
+
+header p {
+    position: absolute;
+    top: -3.5em;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+    height: 480px;
+    text-align: right;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    font-size: 8em;
+}
+
+.roulette {
+    display: inline-block;
+    position: absolute;
+    bottom: 7.5%;
+    left: 5%;
+    width: 34em;
+    height: 34em;
+}
+
+.target {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30em;
+    transition: .3s linear;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6em;
+}
+
+.illust {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 40%;
+}
+
+#message {
+    height: 100vh;
+}
+
+#message p {
+    position: absolute;
+    top: -5em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 1264px;
+    height: 720px;
+    line-height: 1.5em;
+    letter-spacing: 0.25em;
+    font-size: 4em;
+    font-weight: normal;
+    font-family: "Corporate M";
+}
+
+.copyright {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 6%;
+    width: 88%;
+    text-align: right;
+    letter-spacing: 0.05em;
+    font-size: 2em;
+    font-weight: normal;
+    font-family: "Corporate B";
+    color: #bfbfbf;
+    background: #f2f2f2;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+/*標準 iPad*/
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+
+    h2 {
+        font-size: 10em;
+    }
+
+    header p {
+        font-size: 6em;
+    }
+
+    .roulette {
+        width: 28em;
+        height: 28em;
+    }
+
+    .target {
+        width: 24em;
+    }
+
+    .arrow {
+        width: 4em;
+    }
+
+    #message p {
+        top: -1em;
+        width: 854px;
+        height: 420px;
+        line-height: 1em;
+        letter-spacing: inherit;
+        font-size: 3.5em;
+    }
+
+}
+
+@media screen and (orientation:portrait) {
+    /* 縦向き */
+
+    /*標準　iPad Pro*/
+    h2 {
+        font-size: 16em;
+    }
+
+    header p {
+        font-size: 7em;
+    }
+
+    .roulette {
+        width: 40em;
+        height: 40em;
+    }
+
+    .target {
+        width: 34em;
+    }
+
+    .arrow {
+        width: 8em;
+    }
+
+    .illust {
+        width: 60%;
+    }
+
+    #message p {
+        top: 0;
+        width: 976px;
+        height: 720px;
+        line-height: 1.5em;
+    }
+
+    /*標準 iPad*/
+    @media screen and (min-width: 501px) and (max-width: 800px) {
+
+        h2 {
+            font-size: 10em;
+        }
+
+        header p {
+            top: -4.5em;
+            height: 360px;
+            font-size: 6em;
+        }
+
+        .roulette {
+            width: 27em;
+            height: 27em;
+        }
+
+        .target {
+            width: 25em;
+        }
+
+        .arrow {
+            width: 4em;
+        }
+
+        #message p {
+            width: 646px;
+            height: 600px;
+            line-height: 2em;
+            letter-spacing: 0.05em;
+            font-size: 2.5em;
+        }
+
+    }
+
+    /*標準　iPhone*/
+    @media screen and (max-width: 500px) {
+
+        .label {
+            width: 20em;
+        }
+
+        h2 {
+            font-size: 8em;
+        }
+
+        header p {
+            top: -7em;
+            height: 180px;
+            font-size: 3em;
+        }
+
+        .roulette {
+            width: 24em;
+            height: 24em;
+        }
+
+        .target {
+            width: 20em;
+        }
+
+        .arrow {
+            width: 4em;
+        }
+
+        #message p {
+            width: 375px;
+            height: 368px;
+            line-height: 1em;
+            letter-spacing: 0;
+            font-size: 2em;
+        }
+
+        .copyright {
+            padding: 10% 5%;
+            width: 90%;
+            font-size: 1em;
+        }
+
+    }
+
+}

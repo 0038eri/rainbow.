@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="ジブンの色を探し出そう。">
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="サイトのタイトル" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="ジブンの色を探し出そう。" />
+    <meta property="og:image" content="./asesets/images/thumbnail.png" />
+
+    <title>rainbow.</title>
+    <link id="stylesheet" rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'agg6pnj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <div id="progress-box">
+        <div class="progress-bar"></div>
+    </div>
+
+    <header class="wrapper colorBg red">
+
+            <h2>レッド</h2>
+            <p>ぼくらは、高校生。<br>
+                どんな道にだって行ける。<br>
+                可能性は無限大。<br>
+                さあ、虹色の中から、<br>
+                ジブンの色を探し出そう。</p>
+
+            <div class="roulette">
+                <img class="target" src="./assets/images/roulette/target.png" alt="">
+                <img class="arrow" src="./assets/images/roulette/arrow.png" alt="">
+            </div>
+
+    </header>
+
+    <section id="illust" class="wrapper">
+
+        <img src="./assets/images/label/red.png" alt="" class="label label-l illust-label">
+        
+        <img class="illust" src="./assets/images/illust/red.png" alt="">
+
+    </section>
+
+    <section id="message" class="wrapper colorBg red">
+
+        <img src="./assets/images/label/message.png" alt="" class="label label-r">
+        <p>このサイトの作者は、高校生です。<br>
+            あたしに、物事についてあーだこーだいう権利は全くありません。<br>
+            人生経験も浅すぎます。ですが、いじめを受けた経験もあります。<br>
+            その時の世界から足を踏み出し、新たな道を歩みました。<br>
+            そして今、さまざまな世界を経験し、本当の私を見つけました。<br>
+            生きる希望も見つけることができ、現実的な夢もできました。<br>
+            これは、人生で誰もが通る道だと思います。<br>
+            大人からしたら、「何をカッコつけてるの？」と言われてしまうと思います。<br>
+            ですが、いじめられていたり、苦しい環境にいる、一つの世界しかしらない人に<br>
+            このサイトを見て、さまざまな「世界」を経験。そして自分を見つけてほしい。<br>
+            高校生は、人生で「やらかしていい最後の時期」だと思います。<br>
+            まわりに関係なく、様々なことを経験し、「自分の色」を探し出してほしい。<br>
+            そんな思いで今回制作しました。<br>
+            この世の中の学生がみんな、自由になれますように。</p>
+        <h6 class="copyright">(c) 2018-2019 <a href="https://osawaeri.github.io/portfolio/">Eri Osawa</a></h6>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1.0.19/jquery.scrollify.min.js"></script>
+    <script src="./assets/js/responsive.js"></script>
+    <script id="js" src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
